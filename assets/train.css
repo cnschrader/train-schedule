@@ -1,4 +1,9 @@
 .jumbotron {
-    background-color: black;
+    background-color: #8499b4;
+    color: white;
+    
+}
+
+button {
     color: white;
 }
