@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/train.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
 
 <body>
@@ -19,9 +20,16 @@
 
     <div class="jumbotron jumbotron-fluid" style="background-image: url(assets/jumbo3.jpeg); background-repeat: no-repeat; background-size: cover;">
         <div class="container">
-           <br><br><br><br>
+           <br><br><br>
         </div>
     </div>
+
+
+    <!-- intro words -->
+    <h1>Where is your next adventure?</h1>
+    <h4>Enter your train for departure times and information.</h4>
+
+    <br><br><br><br>
 
     <!-- grid system used to display the table that will be pulled from firebase -->
     <div class="container">
@@ -58,22 +66,34 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <form>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type=text class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Train Name</label>
+                                  <input type=text class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Train Name">
+                                  
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">Destinatin</label>
+                                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Where to?">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">First Train Time</label>
+                                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="When was the first train?">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">Frequency</label>
+                                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="How Often Does it come?">
+                                </div>
+                                
+                                <button style="background-color: #5d96a1" type="submit" class="btn btn-primary border-0">Submit</button>
+                              </form>
+                            
+                        </div>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-group form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button style="background-color: #8499b4" type="submit" class="btn btn-primary border-0">Submit</button>
-                  </form>
+                </div>
             </div>
         </div>
     </div>
