@@ -40,7 +40,7 @@
                         <h3>Train Schedule</h3>
                     </div>
                     <div class="card-body">
-                        <table class="table table-sm table-hover">
+                        <table class="table table-sm table-hover" id="train-table">
                             <thead>
                                 <tr>
                                     <th scope="col">Train Name</th>
@@ -50,6 +50,9 @@
                                     <th scope="col">Minutes Away</th>
                                 </tr>
                             </thead>
+                            <tbody>
+
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -71,21 +74,21 @@
                         <div class="card-body">
                             <form>
                                 <div class="form-group">
-                                  <label for="exampleInputEmail1">Train Name</label>
-                                  <input type=text class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Train Name">
+                                  <label for="train-name">Train Name</label>
+                                  <input type=text class="form-control" id="train-name" aria-describedby="emailHelp" placeholder="Enter Train Name">
                                   
                                 </div>
                                 <div class="form-group">
-                                  <label for="exampleInputPassword1">Destinatin</label>
-                                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Where to?">
+                                  <label for="Destination">Destination</label>
+                                  <input type="text" class="form-control" id="destination" placeholder="Where to?">
                                 </div>
                                 <div class="form-group">
-                                  <label for="exampleInputPassword1">First Train Time</label>
-                                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="When was the first train?">
+                                  <label for="first-time">First Train Time</label>
+                                  <input type="text" class="form-control" id="first-time" placeholder="When was the first train?">
                                 </div>
                                 <div class="form-group">
-                                  <label for="exampleInputPassword1">Frequency</label>
-                                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="How Often Does it come?">
+                                  <label for="frequency">Frequency</label>
+                                  <input type="text" class="form-control" id="frequency" placeholder="How Often Does it come?">
                                 </div>
                                 
                                 <button style="background-color: #5d96a1" type="submit" class="btn btn-primary border-0">Submit</button>
@@ -106,6 +109,8 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
     <script src="assets/train.js"></script>
 </body>
